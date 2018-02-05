@@ -28,7 +28,7 @@ Install Patton is easy:
     > python3.6 -m pip install patton-cli
 
 
-.. note::
+**NOTE**
 
     Patton-cli need a `Patton-server <https://github.com/BBVA/patton-server>`_. Be sure that the server are running!
 
