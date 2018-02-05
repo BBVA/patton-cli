@@ -18,10 +18,3 @@ jobs:
           branches:
             only:
               - master
-
-      - deploy:
-          name: Upload to Dockerhub
-          command: make upload-docker
-          branches:
-            only:
-              - master
