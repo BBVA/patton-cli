@@ -14,9 +14,9 @@ Patton-cli - The knife of the Admin & Security auditor
 What's Patton cli?
 ==================
 
-Patton-cli (*P*atton-*C*li) born with the objective to be a knife for system admins and security auditors.
+Patton-cli (PC) born with the objective to be a knife for system admins and security auditors.
 
-PC could be filled with many different sources and can report results in many formats, being great for scripting.
+PC could be filled with many different sources and report in many formats, being great for scripting.
 
 Installation
 ============
@@ -30,7 +30,7 @@ Install Patton is easy:
 
 **NOTE**
 
-    Patton-cli need a `Patton-server <https://github.com/BBVA/patton-server>`_. Be sure that the server are running!
+    Patton-cli need a `Patton-server <https://github.com/BBVA/patton-server>`_. Be sure that the server is running!
 
 Getting started
 ===============
