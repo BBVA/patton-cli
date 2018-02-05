@@ -272,7 +272,7 @@ The format of file is determined by the extension:
 Quiet mode
 ----------
 
-If you don't want that Patton-cli reports anything by the terminal, you can use ::samp:`-q` option:
+If you don't want that Patton-cli reports anything by the terminal, you can use :samp:`-q` option:
 
 
 .. code-block:: bash
