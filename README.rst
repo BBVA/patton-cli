@@ -18,6 +18,13 @@ Patton-cli (PC) born with the objective to be a knife for system admins and secu
 
 PC could be filled with many different sources and report in many formats, being great for scripting.
 
+You can see a demo video running Patton-Server + Patton-CLI:
+
+.. image:: http://img.youtube.com/vi/g5pROiIQUzk/0.jpg
+   :target: http://www.youtube.com/watch?v=g5pROiIQUzk
+   :alt: patton demo
+   :align: center
+
 Installation
 ============
 
