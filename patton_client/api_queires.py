@@ -59,7 +59,11 @@ async def check_dependencies_in_patton(dep_list: List[str],
     query_data = _prepare_query(dep_list, patton_config)
     query_data["source"] = patton_config.source_type
 
-    return await do_api_query(query_data, patton_url, patton_config)
+    try:
+        return await do_api_query(query_data, patton_url, patton_config)
+    except (aiohttp.client_exceptions.ServerDisconnectedError,
+            aiohttp.client_exceptions.ClientConnectorError):
+        raise PCException("Can't connect to Patton Server")
 
 
 async def check_banners_in_patton(dep_list: List[str],
@@ -68,4 +72,7 @@ async def check_banners_in_patton(dep_list: List[str],
 
     patton_url = f'{patton_config.patton_host}/api/v1/check-banners'
 
-    return await do_api_query(dep_list, patton_url, patton_config)
+    try:
+        return await do_api_query(dep_list, patton_url, patton_config)
+    except aiohttp.client_exceptions.ServerDisconnectedError:
+        raise PCException("Can't connect to Patton Server")

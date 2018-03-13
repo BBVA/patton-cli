@@ -51,7 +51,7 @@ Examples:
     parser.add_argument('--patton-host',
                         dest="PATTON_HOST",
                         help='patton server host',
-                        default="127.0.0.1:8000")
+                        default="patton.owaspmadrid.org:8000")
 
     parser.add_argument('-F', '--display-format',
                         dest="DISPLAY_FORMAT",
@@ -149,6 +149,8 @@ def main():
     if parsed_cmd.WORKING_MODE:
         try:
             check_dependencies(patton_config)
+
+            print(f'\nPatton Server used => "{parsed_cmd.PATTON_HOST}"\n')
 
         except (PCException, PCServerResponseException) as e:
             print(f"\n[!] {e}\n")
