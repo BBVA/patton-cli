@@ -1,15 +1,15 @@
 Patton-cli - The knife of the Admin & Security auditor
 ======================================================
 
-+----------------+-----------------------------------------------+
-|Current version | 0.0.1                                         |
-+----------------+-----------------------------------------------+
-|Project site    | https://github.com/bbva/patton-client         |
-+----------------+-----------------------------------------------+
-|Issues          | https://github.com/bbva/patton-client/issues/ |
-+----------------+-----------------------------------------------+
-|Python versions | 3.6 or above                                  |
-+----------------+-----------------------------------------------+
++----------------+--------------------------------------------+
+|Current version | 0.0.1                                      |
++----------------+--------------------------------------------+
+|Project site    | https://github.com/bbva/patton-cli         |
++----------------+--------------------------------------------+
+|Issues          | https://github.com/bbva/patton-cli/issues/ |
++----------------+--------------------------------------------+
+|Python versions | 3.6 or above                               |
++----------------+--------------------------------------------+
 
 What's Patton cli?
 ==================
@@ -17,6 +17,13 @@ What's Patton cli?
 Patton-cli (PC) born with the objective to be a knife for system admins and security auditors.
 
 PC could be filled with many different sources and report in many formats, being great for scripting.
+
+You can see a demo video running Patton-Server + Patton-CLI:
+
+.. image:: http://img.youtube.com/vi/g5pROiIQUzk/0.jpg
+   :target: http://www.youtube.com/watch?v=g5pROiIQUzk
+   :alt: patton demo
+   :align: center
 
 Installation
 ============
