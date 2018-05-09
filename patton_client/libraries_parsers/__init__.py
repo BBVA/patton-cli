@@ -6,6 +6,7 @@ from .simple import simple_parser
 from .dpkg import dpkg_parser
 from .python import python_parser
 from .alpine import alpine_parser
+from .golang import golang_parser
 
 
 DEPENDENCIES_PARSERS = {
@@ -13,7 +14,8 @@ DEPENDENCIES_PARSERS = {
     'simple_parser': simple_parser,
     'dpkg': dpkg_parser,
     'python': python_parser,
-    'alpine': alpine_parser
+    'alpine': alpine_parser,
+    'golang': golang_parser
 }
 
 
@@ -40,4 +42,3 @@ def parse_dependencies(dependencies: List[List[str]],
         result.update(parser(fixed_source, patton_config))
 
     return result
-
