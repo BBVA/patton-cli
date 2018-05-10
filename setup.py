@@ -13,7 +13,10 @@ with open(join(here, 'requirements.txt')) as f:
 with open(join(abspath(dirname(__file__)), "VERSION"), "r") as v:
     VERSION = v.read().replace("\n", "")
 
-PATCH = environ("CIRCLE_BUILD_NUM")
+
+# Get patch version from CircleCI
+PATCH = environ["CIRCLE_BUILD_NUM"]
+
 
 setup(
     name='patton-cli',
