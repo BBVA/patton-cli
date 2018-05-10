@@ -232,6 +232,17 @@ or
 
     > patton -i requirements.txt -e python
 
+
+From Golang requirements
+++++++++++++++++++++++++
+
+.. code-block:: bash
+
+    > cat Gopkg.lock | patton -e golang
+
+* Currently Golang's package versioning is still somewhat green, but the biggest solution right now is https://github.com/golang/dep
+
+
 Formatting the output
 ---------------------
 

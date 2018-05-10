@@ -1,4 +1,4 @@
-from os import path
+from os import path, environ
 from os.path import join, abspath, dirname
 from setuptools import setup, find_packages
 
@@ -13,9 +13,11 @@ with open(join(here, 'requirements.txt')) as f:
 with open(join(abspath(dirname(__file__)), "VERSION"), "r") as v:
     VERSION = v.read().replace("\n", "")
 
+PATCH = environ("CIRCLE_BUILD_NUM")
+
 setup(
     name='patton-cli',
-    version=VERSION,
+    version=f"{VERSION}.{PATCH}",
     packages=find_packages(),
     long_description=readme,
     install_requires=required,
