@@ -7,7 +7,7 @@ import os.path as op
 from typing import List, Set
 
 from patton_client import PattonRunningConfig, PattonResults, PCException
-from patton_client.api_queires import check_dependencies_in_patton, \
+from patton_client.api_queries import check_dependencies_in_patton, \
     check_banners_in_patton
 
 
