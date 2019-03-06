@@ -28,6 +28,13 @@ You can see a demo video running Patton-Server + Patton-CLI:
 Installation
 ============
 
+**NOTE**
+
+    Patton-cli need a `Patton-server <https://github.com/BBVA/patton-server>`_. Be sure that the server is running!
+
+Using pip
+---------
+
 Install Patton is easy:
 
 .. code-block:: bash
@@ -35,9 +42,21 @@ Install Patton is easy:
     > python3.6 -m pip install patton-cli
 
 
-**NOTE**
 
-    Patton-cli need a `Patton-server <https://github.com/BBVA/patton-server>`_. Be sure that the server is running!
+Using Docker
+------------
+
+There is an included [Dockerfile](./Dockerfile). It can install
+`patton-cli` from either the pypi release, the github head, or from
+the current working directory. It accepts a `build-arg` for chose. Run
+one of:
+
+.. code-block:: bash
+
+    docker build -t patton-cli . --build-arg source=cwd
+    docker build -t patton-cli . --build-arg source=github
+    docker build -t patton-cli . --build-arg source=pypi
+
 
 Getting started
 ===============
