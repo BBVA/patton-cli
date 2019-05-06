@@ -1,3 +1,7 @@
+.. pull-quote::
+
+DEPRECATED. patton-cli has been moved to the `new patton repository <https://github.com/BBVA/patton>`_ into a module for better maintenance. THIS REPOSITORY WILL BE DELETED AS OF JULY 1
+
 Patton-cli - The knife of the Admin & Security auditor
 ======================================================
 
